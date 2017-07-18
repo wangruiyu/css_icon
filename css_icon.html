@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>icon</title>
+    <style>
+        .icon_default{
+            display: block;
+            width:20px;
+            height:20px;
+            -webkit-border-radius:10px;
+            -moz-border-radius:10px;
+            border-radius:10px;
+            border:1px solid #cdcdcd;
+            box-sizing: border-box;
+        }
+
+        .icon_add{
+			background-color: #44db5e;
+			border:none;
+			position: relative;
+        }
+        .icon_add:before{
+			content: '';
+		    display: block;
+		    width: 2px;
+		    height: 12px;
+		    top: 4px;
+		    left: 9px;
+		    position: absolute;
+		    background: #fff;
+        }
+        .icon_add:after{
+			content: '';
+		    display: block;
+		    width: 12px;
+		    height: 2px;
+		    top: 9px;
+		    left: 4px;
+		    position: absolute;
+		    background: #fff;
+        }
+	
+		.icon_checked{
+			background-color: #44db5e;
+			border:none;
+			position: relative;
+		}
+		.icon_checked:before{
+			content: '';
+		    display: block;
+		    width: 10px;
+		    height: 5px;
+		    border-left: 2px solid #fff;
+		    border-bottom: 2px solid #fff;
+		    position: absolute;
+		    webkit-transform: rotate(-45deg);
+		    transform: rotate(-45deg);
+		    left: 4px;
+		    top: 5px;
+		}
+
+		.icon_delete{
+			position: relative;
+			border:1px solid #0899e2;
+		}
+		.icon_delete:before{
+			content: '';
+		    display: block;
+		    width: 10px;
+		    height: 2px;
+		    top: 8px;
+		    left: 4px;
+		    position: absolute;
+		    background: #0899e2;
+        }
+        i{
+        	margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+
+<i class="icon_default"></i>
+
+<i class="icon_default icon_add"></i>
+
+<i class="icon_default icon_checked"></i>
+
+<i class="icon_default icon_delete"></i>
+
+</body>
+</html>
